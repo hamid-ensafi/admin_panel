@@ -1,0 +1,286 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #f0f1f7 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+figure,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+}
+
+.web-container {
+  display: flex;
+}
+.web-container > .menu-container {
+  width: 16%;
+  background-color: red;
+}
+.web-container > .main-content {
+  width: 84%;
+}
+.web-container > .main-content > .header-top {
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+}
+.web-container > .main-content > .header-top > .header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.web-container > .main-content > .header-top > .header-content > .menu-humbprg-icon {
+  display: flex;
+  align-items: center;
+}
+.web-container > .main-content > .header-top > .header-content > .menu-humbprg-icon > i {
+  color: #536485;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .icon-box {
+  padding: 1rem 0.7rem !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .icon-box > i {
+  color: #536485;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  transition-duration: 0.1s;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .icon-box > i:hover {
+  background-color: #f0f1f7;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-user {
+  display: flex;
+  align-items: center;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-user > figure {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem !important;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-user > figure > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-user > .text-user-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-user > .text-user-top > p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 10px;
+  color: #536485;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-user > .text-user-top > span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #536485;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag > figure {
+  width: 20px;
+  height: 20px;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag > figure > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 28%;
+  transform: translateX(-28%);
+  box-shadow: 0 0.25rem 0.625rem rgba(20, 20, 20, 0.1019607843);
+  border-radius: 3px;
+  background-color: #fff;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu > .language-container > .language-content {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  padding: 1rem 0.7rem;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu > .language-container > .language-content:hover {
+  background-color: #f9f7fd;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu > .language-container > .language-content:hover > p {
+  color: #845adf;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu > .language-container > .language-content > p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #333335;
+  font-family: "Inter", sans-serif !important;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu > .language-container > .language-content > figure {
+  width: 16px;
+  height: 16px;
+}
+.web-container > .main-content > .header-top > .header-content > .icon-header > .image-flag .sub-language-menu > .language-container > .language-content > figure > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.search-box-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5764705882);
+}
+.search-box-container .search-content {
+  position: fixed;
+  max-width: 500px;
+  margin-top: 1.7rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.search-box-container .search-content > .search-box-content > form {
+  display: flex;
+  border: 2px solid #845adf;
+  border-radius: 0.2rem;
+}
+.search-box-container .search-content > .search-box-content > form > .icon-search-box {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf0f7;
+}
+.search-box-container .search-content > .search-box-content > form > input {
+  flex-grow: 10;
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 0.87rem;
+}
+.search-box-container .search-content > .tags-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-box-container .search-content > .tags-content > p {
+  color: #8c9097;
+  font-size: 0.87rem;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 0.5rem !important;
+}
+.search-box-container .search-content > .tags-content > span {
+  color: #8c9097;
+  display: flex;
+  align-items: center;
+  margin-right: 0.2rem;
+  padding: 0.125rem 0.55rem;
+  background-color: rgb(243, 246, 248);
+  color: #000;
+}
+.search-box-container .search-content > .tags-content > span > i {
+  padding: 0 0.2rem;
+  text-align: end;
+}
+.search-box-container .search-content > .tags-content > span > i:nth-of-type(1) {
+  margin-right: 0.5rem;
+}
+.search-box-container .search-content > .tags-content > span > i:nth-of-type(2) {
+  margin-left: 0.5rem;
+}
+.search-box-container .search-content > .tags-content > span > span {
+  font-size: 0.75rem;
+}
+.search-box-container .search-content > .recent-search > p {
+  margin-bottom: 0.5rem !important;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #8c9097;
+}
+.search-box-container .search-content > .recent-search > span {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  color: #333335;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.search-box-container .search-content > .recent-search > span > i {
+  cursor: pointer;
+}
+.search-box-container .search-content > .recent-search > span span {
+  font-size: 0.85rem;
+}
+.search-box-container .search-content > .button-search-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding: 2rem 1.25rem 0;
+  border-top: 1px solid #eee;
+}
+.search-box-container .search-content > .button-search-box > a {
+  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.search-box-container .search-content > .button-search-box > a:nth-of-type(1) {
+  background-color: #ebe5fa;
+  border-radius: 5px 0 0 5px;
+  color: #895ae0;
+  transition-duration: 0.2s;
+}
+.search-box-container .search-content > .button-search-box > a:nth-of-type(1):hover {
+  background-color: #895ae0;
+  color: #fff;
+}
+.search-box-container .search-content > .button-search-box > a:nth-of-type(2) {
+  background-color: #895ae0;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
