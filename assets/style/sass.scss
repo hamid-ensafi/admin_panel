@@ -156,16 +156,176 @@ main {
                             }
                         }
 
+                        .notif-bell {
+                            transform: translateX(-30%);
+
+                            >.sub-shoping-content {
+                                >.todo-container {
+                                    >.todo-content {
+
+                                        >li {
+                                            &:nth-of-type(1) {
+                                                >span {
+                                                    background-color: #845adf32;
+
+
+                                                    >i {
+                                                        color: #845adf;
+                                                    }
+                                                }
+                                            }
+
+                                            &:nth-of-type(2) {
+                                                >span {
+                                                    background-color: #23b8e534;
+
+
+                                                    >i {
+                                                        color: #23b7e5;
+                                                    }
+                                                }
+                                            }
+
+                                            &:nth-of-type(3) {
+                                                >span {
+                                                    background-color: #e791bc34;
+
+
+                                                    >i {
+                                                        color: #e791bc;
+                                                    }
+                                                }
+                                            }
+
+                                            &:nth-of-type(4) {
+                                                >span {
+                                                    background-color: #f5b94936;
+
+
+                                                    >i {
+                                                        color: #f5b849;
+                                                    }
+                                                }
+                                            }
+
+                                            &:nth-of-type(5) {
+                                                >span {
+                                                    background-color: #26bf9435;
+
+
+                                                    >i {
+                                                        color: #26bf94;
+                                                    }
+                                                }
+                                            }
+
+                                            >span {
+                                                width: 40px !important;
+                                                height: 40px !important;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-radius: 50%;
+                                                margin-right: 5px;
+
+
+                                            }
+
+                                            .title-todo-content {
+                                                >p {
+
+                                                    line-height: 2;
+                                                }
+
+                                                >span {
+                                                    font-size: 12px;
+                                                    line-height: 1.5 !important;
+                                                    display: block;
+                                                    color: #8c9097;
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .drop-down-todo {
+                                padding: .2rem;
+
+                                >i {
+                                    color: #8c9097;
+                                }
+                            }
+                        }
+
+                        .notif-shoping {
+                            transform: translateX(-45%);
+
+                            >.sub-shoping-content {
+                                >.todo-container {
+                                    >.todo-content {
+                                        >li {
+                                            >figure {
+                                                flex-grow: 1;
+
+                                                >img {
+                                                    display: block;
+                                                    width: 28px;
+                                                    height: 28px;
+                                                    border-radius: 50%;
+
+                                                }
+
+                                            }
+
+                                            >.text-title-todo {
+                                                >.drop-down-todo {
+
+                                                    >span {
+                                                        color: #8c9097;
+                                                        font-size: 12px;
+
+                                                        &:nth-of-type(1) {
+                                                            padding-right: .45rem;
+                                                            border-right: 1px solid #eee;
+                                                        }
+
+                                                        &:nth-of-type(2) {
+                                                            padding-left: .45rem;
+
+                                                        }
+
+                                                    }
+                                                }
+
+                                            }
+
+                                            .title-todo-content {
+                                                >p {
+                                                    line-height: 2;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
                         .sub-menu-shoping {
                             position: absolute;
                             top: 100%;
                             left: 0;
                             width: 65%;
-                            transform: translateX(-45%);
+
                             background-color: #fff;
                             box-shadow: 0 0.25rem 0.625rem #1414141a;
                             border-radius: 5px;
+                            cursor: auto;
 
+                            // display: none;
                             >.sub-shoping-content {
 
                                 >.title-sub-shop {
@@ -192,69 +352,76 @@ main {
 
                                 }
 
-                                >.todo-content {
+                                >.todo-container {
+                                    >.todo-content {
 
-                                    >li {
-                                        display: flex;
-                                        padding: .7rem;
+                                        >li {
+                                            display: flex;
+                                            padding: .7rem;
+                                            border-top: 1px solid #eee;
+
+                                            >&:hover {
+                                                background-color: #f9f7fd;
+                                            }
+
+
+                                            >.text-title-todo {
+                                                flex-grow: 10;
+
+                                                >.todo-item-container {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+
+                                                    >.title-todo-content {
+                                                        >p {
+
+                                                            font-size: 13px;
+                                                            font-weight: bold;
+                                                            // color:#8c9097;
+                                                        }
+                                                    }
+
+                                                    >.price-todo {
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                        >p {
+                                                            font-size: 13px;
+                                                            padding-right: 1rem !important;
+                                                        }
+
+                                                        >i {
+                                                            color: red;
+                                                            cursor: pointer;
+                                                        }
+                                                    }
+                                                }
+
+                                                >.drop-down-todo {
+                                                    display: flex;
+
+
+                                                }
+
+                                            }
+
+                                        }
+                                    }
+
+                                    >.button-todo {
+                                        padding: 1rem;
                                         border-top: 1px solid #eee;
-                                        border-bottom: 1px solid #eee;
 
-                                        >figure {
-                                            flex-grow: 1;
-
-                                            img {
-                                                display: block;
-                                                width: 28px;
-                                                height: 28px;
-                                                border-radius: 50%;
-
-                                            }
-
+                                        >a {
+                                            padding: .5rem .8rem !important;
+                                            display: block;
+                                            font-size: 13px;
+                                            background-color: #845adf;
+                                            color: #fff;
+                                            text-align: center;
+                                            border-radius: 5px;
                                         }
-
-                                        >.text-title-todo {
-                                            flex-grow: 10;
-
-                                            >.todo-item-container {
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-
-                                                >.title-todo-content {
-
-                                                    >p {
-                                                        font-size: 13px;
-                                                        font-weight: bold;
-                                                        // color:#8c9097;
-                                                    }
-                                                }
-
-                                                >.price-todo {
-                                                    >p {
-                                                        font-size: 13px;
-                                                    }
-
-                                                    >i {}
-                                                }
-                                            }
-
-                                            >.drop-down-todo {
-                                                display: flex;
-                                                >span {
-                                                    color: #8c9097;
-                                                    font-size: 12px;
-                                                    
-                                                    &:nth-of-type(1){
-                                                        padding-right: .9rem;
-                                                        border-right: 1px solid #eee;
-                                                    }
-
-                                                }
-                                            }
-
-                                        }
-
                                     }
                                 }
                             }
@@ -280,7 +447,6 @@ main {
                     >.image-user {
                         display: flex;
                         align-items: center;
-
                         >figure {
                             width: 32px;
                             height: 32px;
@@ -293,7 +459,32 @@ main {
                                 border-radius: 50%;
                             }
                         }
+                        >.profile-setting{
+                            background-color: #fff;
+                            position: absolute;
+                            top: 100%;
+                            width: 35%;
+                            transform: translate(-35%);
+                            border-radius: 5px;
+                            box-shadow: 0 0.25rem 0.625rem #1414141a;
+                            display: none;
+                            >.items-setting{
+                                display: flex;
+                                align-items: center;
+                                padding: .65rem;
+                                color:#333335 ;
+                                &:hover{
+                                    background-color: #f9f7fd;
+                                   color: #845adf;
+                                }
+                             
+                                >p{
+                                    font-size: 13px;
+                                   padding-left: .5rem !important;
 
+                                }
+                            }
+                        }
                         >.text-user-top {
                             display: flex;
                             flex-direction: column;
@@ -327,7 +518,7 @@ main {
                                 border-radius: 50%;
                             }
                         }
-
+                       
                         .sub-language-menu {
                             display: none;
                             position: absolute;
