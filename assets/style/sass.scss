@@ -83,7 +83,9 @@ main {
                         .drop-down-content{
                             display: none;
                         }
-                       
+                       .show{
+                        display: block;
+                       }
                         &:nth-of-type(5) {
                             i {
                                 >.counter-content {

@@ -20,10 +20,22 @@ const Dropdown_btn = document.querySelectorAll('.drop-down')
 const Dropdown_content = document.querySelectorAll('.drop-down-content')
 Dropdown_btn.forEach((value) => {
     value.addEventListener('click', () => {
-  
-   
- 
-        // value.querySelector('.drop-down-content').style.display='block'
+        for(let i of Dropdown_content){
+            i.setAttribute('data-status','off')
+            if(value.querySelector('.drop-down-content')!=i){
+                i.classList.remove('show')
+            }
+           
+            
+        }
+        if(value.querySelector('.drop-down-content').getAttribute('data-status')=='off'){
+            value.querySelector('.drop-down-content').setAttribute('data-status','on')
+        }else{
+            value.querySelector('.drop-down-content').setAttribute('data-status','off')
+
+        }
+        value.querySelector('.drop-down-content').classList.toggle('show')
+        
 
     })
 })

@@ -73,6 +73,9 @@ main {
 .web-container > .main-content > .header-top > .header-content > .icon-header > .icon-box .drop-down-content {
   display: none;
 }
+.web-container > .main-content > .header-top > .header-content > .icon-header > .icon-box .show {
+  display: block;
+}
 .web-container > .main-content > .header-top > .header-content > .icon-header > .icon-box:nth-of-type(5) i > .counter-content > .count {
   background-color: #23b7e5;
 }
