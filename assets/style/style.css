@@ -739,6 +739,71 @@ main {
   border-radius: 50%;
   font-weight: bolder;
 }
+.top-Deals-container > #column-Chart {
+  padding-right: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.activity-customers-information {
+  background-color: #fff;
+  display: flex;
+  padding: 1.25rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+.activity-customers-information > .icon-activity {
+  width: 40px;
+  height: 40px;
+  background-color: #845adf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.activity-customers-information > .icon-activity > i {
+  color: #fff;
+}
+.activity-customers-information > .activity-customers-content {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+.activity-customers-information > .activity-customers-content > .title-chart-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.activity-customers-information > .activity-customers-content > .title-chart-content > .text-activity > span {
+  font-size: 12px;
+  color: #8c9097;
+}
+.activity-customers-information > .activity-customers-content > .title-chart-content > .text-activity > p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #333335;
+}
+.activity-customers-information > .activity-customers-content > .bottom-activity {
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.activity-customers-information > .activity-customers-content > .bottom-activity > a {
+  font-size: 13px;
+  color: #26bf94;
+  display: flex;
+  align-items: center;
+}
+.activity-customers-information > .activity-customers-content > .bottom-activity > a > i {
+  margin-left: 0.5rem;
+}
+.activity-customers-information > .activity-customers-content > .bottom-activity > span > span {
+  font-size: 13px;
+  color: #26bf94;
+}
+.activity-customers-information > .activity-customers-content > .bottom-activity > span > p {
+  font-size: 11px;
+  color: #8c9097;
+}
 
 @keyframes animation-scale {
   to {
