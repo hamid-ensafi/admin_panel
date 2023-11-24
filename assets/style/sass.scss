@@ -851,6 +851,7 @@ main {
         height: 100%;
         background: url('../img/media-65.png') no-repeat center center /cover;
         opacity: .2;
+        
 
     }
 
@@ -926,6 +927,16 @@ main {
         >.drop-down {
             position: relative;
 
+            >span {
+                color: #8c9097;
+                cursor: pointer;
+
+                >span {
+                    font-size: 13px;
+                }
+
+            }
+
             >i {
                 padding: 0 .5rem;
                 cursor: pointer;
@@ -937,9 +948,10 @@ main {
                 background-color: #fff;
                 border-radius: 10px;
                 display: none;
+
                 ul {
                     width: 160px;
-                   
+
                     li {
                         font-size: 13px;
                         padding: .5rem .9rem;
@@ -1033,20 +1045,26 @@ main {
             }
         }
     }
-    >#column-Chart{
-        padding-right: 1rem;
-        border-top: 1px solid #eee;
-       
+
+   
+    #main-chart{
+        padding: 1.25rem;
     }
 }
 
-.activity-customers-information{
+.chart-style {
+    padding-right: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.activity-customers-information {
     background-color: #fff;
     display: flex;
     padding: 1.25rem;
     border-radius: 5px;
     margin-bottom: 1.5rem;
-    >.icon-activity{
+
+    >.icon-activity {
         width: 40px;
         height: 40px;
         background-color: #845adf;
@@ -1054,60 +1072,71 @@ main {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        >i{
+
+        >i {
             color: #fff;
         }
     }
-    >.activity-customers-content{
+
+    >.activity-customers-content {
         flex-grow: 1;
-    margin-left: 1rem ;
-        >.title-chart-content{
+        margin-left: 1rem;
+
+        >.title-chart-content {
             display: flex;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
+            align-items: center;
             justify-content: space-between;
-            >.text-activity{
-                >span{
+
+            >.text-activity {
+                >span {
                     font-size: 12px;
                     color: #8c9097;
                 }
-                >p{
+
+                >p {
                     font-size: 1.5rem;
                     font-weight: bolder;
                     color: #333335;
                 }
             }
-        
-        }
-        >.bottom-activity{
-          display: flex;
-          margin-top: .5rem;
-          align-items: center;
-          justify-content: space-between;
 
-          >a{
-            font-size: 13px;
-            color: #26bf94;
+        }
+
+        >.bottom-activity {
             display: flex;
+            margin-top: .5rem;
             align-items: center;
-            >i{
-                margin-left: .5rem ;
-            }
-          }
-          >span{
-            >span{
+            justify-content: space-between;
+
+            >a {
                 font-size: 13px;
                 color: #26bf94;
+                display: flex;
+                align-items: center;
+
+                >i {
+                    margin-left: .5rem;
+                }
             }
-            >p{
-                font-size: 11px ;
-                color: #8c9097;
-              }
-          }
-       
+
+            >span {
+                >span {
+                    font-size: 13px;
+                    color: #26bf94;
+                }
+
+                >p {
+                    font-size: 11px;
+                    color: #8c9097;
+                }
+            }
+
         }
     }
-    
+
 }
+
 @keyframes animation-scale {
     to {
         transform: translate(-50%, -50%) scale(2);

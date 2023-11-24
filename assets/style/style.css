@@ -660,6 +660,13 @@ main {
 .top-Deals-container > .top-deals-content > .drop-down {
   position: relative;
 }
+.top-Deals-container > .top-deals-content > .drop-down > span {
+  color: #8c9097;
+  cursor: pointer;
+}
+.top-Deals-container > .top-deals-content > .drop-down > span > span {
+  font-size: 13px;
+}
 .top-Deals-container > .top-deals-content > .drop-down > i {
   padding: 0 0.5rem;
   cursor: pointer;
@@ -739,7 +746,11 @@ main {
   border-radius: 50%;
   font-weight: bolder;
 }
-.top-Deals-container > #column-Chart {
+.top-Deals-container #main-chart {
+  padding: 1.25rem;
+}
+
+.chart-style {
   padding-right: 1rem;
   border-top: 1px solid #eee;
 }
@@ -769,7 +780,7 @@ main {
 }
 .activity-customers-information > .activity-customers-content > .title-chart-content {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 .activity-customers-information > .activity-customers-content > .title-chart-content > .text-activity > span {
