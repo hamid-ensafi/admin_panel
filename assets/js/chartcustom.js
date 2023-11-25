@@ -294,73 +294,309 @@ let Main_chart = new ApexCharts(document.querySelector("#main-chart"), Main_opti
 Main_chart.render();
 
 
-var options = {
+let line_option1 = {
     series: [{
         name: "Desktops",
-        data: [10,15,0,40,40,0]
+        data: [10, 0, 15, 0, 40, 35, 40, 0, 15]
     }],
     chart: {
-        width:40,
-        height:40,
+        width: 90,
+        height: 40,
         type: 'line',
-        toolbar:{
-            show:false
+        toolbar: {
+            show: false
         },
         sparkline: {
-            enabled: false,
+            enabled: true,
         }
     },
     dataLabels: {
         enabled: false
     },
     stroke: {
-        width:1,
-        curve: 'smooth'
+        width: 1,
+        curve: 'smooth',
+        colors: ['#845adf']
     },
     title: {
-        show:false
+        show: false
     },
     grid: {
-        show:false,
-       
+        show: false,
+
     },
-    xaxis: {
-       show:false,
-        labels:{
-            show:false
-        },
-        axisTicks: {
-            show: false,
-        },
-        axisBorder: {
-            show: false,
-       
-        },
-    },
-    
     yaxis: {
         min: 0,
         max: 80,
         tickAmount: 1,
-        labels:{
-            show:false
+        labels: {
+            show: false
         },
         axisTicks: {
             show: false,
         },
-        
+
     },
-    tooltip:{
-        enabled:false
-    }
+    tooltip: {
+        enabled: false
+    },
+
+};
+let line_chart1 = new ApexCharts(document.querySelector(".line-chart1"), line_option1);
+line_chart1.render();
+
+
+
+
+
+let line_option2 = {
+    series: [{
+        name: "Desktops",
+        data: [10, 0, 15, 0, 40, 35, 40, 0, 15]
+    }],
+    chart: {
+        width: 90,
+        height: 40,
+        type: 'line',
+        toolbar: {
+            show: false
+        },
+        sparkline: {
+            enabled: true,
+        }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        width: 1,
+        curve: 'smooth',
+        colors: ['#84d7f1']
+    },
+    title: {
+        show: false
+    },
+    grid: {
+        show: false,
+
+    },
+    yaxis: {
+        min: 0,
+        max: 80,
+        tickAmount: 1,
+        labels: {
+            show: false
+        },
+        axisTicks: {
+            show: false,
+        },
+
+    },
+    tooltip: {
+        enabled: false
+    },
+
 };
 
+let line_chart2 = new ApexCharts(document.querySelector(".line-chart2"), line_option2);
+line_chart2.render();
 
 
-// let Chart_container = document.querySelectorAll(".line-chart")
+let line_option3 = {
+    series: [{
+        name: "Desktops",
+        data: [10, 0, 15, 0, 40, 35, 40, 0, 15]
+    }],
+    chart: {
+        width: 90,
+        height: 40,
+        type: 'line',
+        toolbar: {
+            show: false
+        },
+        sparkline: {
+            enabled: true,
+        }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        width: 1,
+        curve: 'smooth',
+        colors: ['#26bf94']
+    },
+    title: {
+        show: false
+    },
+    grid: {
+        show: false,
 
-var chart = new ApexCharts( document.querySelector(".line-chart"), options);
-    chart.render();
-// Chart_container.forEach((value) => {
-    
-// })
+    },
+    yaxis: {
+        min: 0,
+        max: 80,
+        tickAmount: 1,
+        labels: {
+            show: false
+        },
+        axisTicks: {
+            show: false,
+        },
+
+    },
+    tooltip: {
+        enabled: false
+    },
+
+};
+
+let line_chart3 = new ApexCharts(document.querySelector(".line-chart3"), line_option3);
+line_chart3.render();
+
+
+let line_option4 = {
+    series: [{
+        name: "Desktops",
+        data: [10, 0, 15, 0, 40, 35, 40, 0, 15]
+    }],
+    chart: {
+        width: 90,
+        height: 40,
+        type: 'line',
+        toolbar: {
+            show: false
+        },
+        sparkline: {
+            enabled: true,
+        }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        width: 1,
+        curve: 'smooth',
+        colors: ['#f5b849']
+    },
+    title: {
+        show: false
+    },
+    grid: {
+        show: false,
+
+    },
+    yaxis: {
+        min: 0,
+        max: 80,
+        tickAmount: 1,
+        labels: {
+            show: false
+        },
+        axisTicks: {
+            show: false,
+        },
+
+    },
+    tooltip: {
+        enabled: false
+    },
+
+};
+
+let line_chart4 = new ApexCharts(document.querySelector(".line-chart4"), line_option4);
+line_chart4.render();
+
+
+var options = {
+    series: [44, 55, 41, 17],
+    chart: {
+        type: 'donut',
+        width: '100%',
+        height: 350,
+
+
+    },
+    dataLabels: {
+        enabled: false,
+
+
+    },
+    colors: ['#845adf', '#23b7e5', '#f5b849', '#26bf94'],
+    labels: ["mobile", "Desktop", "Laptop", "Tablet"],
+    stroke: {
+        width: 0,
+    },
+    plotOptions: {
+        pie: {
+            startAngle: 0,
+            endAngle: 360,
+            expandOnClick: false,
+            offsetX: 0,
+            offsetY: 0,
+            customScale: 1,
+
+            donut: {
+                size: '85%',
+
+
+                labels: {
+                    show: true,
+
+                    name: {
+                        show: true,
+
+                    },
+                    value: {
+                        show: true,
+                        fontSize: '24px',
+                        fontFamily: 'Inter',
+                        offsetY: 10,
+                    },
+                    total: {
+                        show: true,
+                        showAlways: true,
+                        label: 'Total',
+                        fontSize: '12px',
+                        fontFamily: 'Inter',
+                        fontWeight: 'bolder',
+                        color: '#8c9097',
+                        formatter: function (w) {
+                            return w.globals.seriesTotals.reduce((a, b) => {
+                                return a + b
+                            }, 0)
+                        }
+                    }
+                }
+            },
+        }
+
+    },
+    fill: {
+        colors: ['#845adf', '#23b7e5', '#f5b849', '#26bf94']
+    },
+    legend: {
+        position: 'bottom',
+        showForSingleSeries: true,
+        formatter: function (label, opts) {
+            return label + ' ' + opts.w.globals.series[opts.seriesIndex]
+        },
+
+    },
+    tooltip: {
+        colors: ['#845adf', '#23b7e5', '#f5b849', '#26bf94'],
+        title: {
+            show: false
+        },
+        y: {
+
+            formatter: function (val) {
+                return val
+            }
+        },
+    }
+
+};
+
+var chart = new ApexCharts(document.querySelector("#circle-chart"), options);
+chart.render();
