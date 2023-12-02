@@ -69,6 +69,7 @@ let Column_option = {
     chart: {
         type: 'bar',
         height: 180,
+        width:276,
         toolbar: {
             show: false,
         },
