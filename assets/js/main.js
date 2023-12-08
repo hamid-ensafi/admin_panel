@@ -40,3 +40,40 @@ Dropdown_btn.forEach((value) => {
 })
 
 
+let Todo_value = document.querySelectorAll('.todo-content>li')
+let Todo_content = document.querySelectorAll('.counter-notif')
+let Todo_container = document.querySelectorAll('.sub-shoping-content')
+
+Todo_value.forEach((value) => {
+    value.addEventListener('click', Remove_element)
+})
+
+Todo_container.forEach((value) => {
+    value.addEventListener('click',(e)=>{
+        e.stopPropagation()
+    })
+
+})
+
+function Remove_element(e) {
+    if (e.target.tagName == 'I') {
+        this.remove()
+        counter_number()
+    }
+}
+
+function counter_number() {
+    let counter
+    Todo_content.forEach((value) => {
+        counter=value.querySelector('.todo-content').children.length
+        value.querySelector('.counter-items-num').innerHTML =counter 
+        value.querySelector('.count').innerHTML = counter
+        if(counter==0){
+            console.log('hamid')
+        }
+
+    })
+
+}
+
+counter_number()

@@ -179,6 +179,7 @@ main {
 }
 .web-container > .main-content-container > .header-top > .header-content > .icon-header > .icon-box .notif-bell .drop-down-todo > i {
   color: #8c9097;
+  cursor: pointer;
 }
 .web-container > .main-content-container > .header-top > .header-content > .icon-header > .icon-box .notif-shoping {
   transform: translateX(-45%);
@@ -211,6 +212,7 @@ main {
   top: 100%;
   left: 0;
   width: 65%;
+  z-index: 10;
   background-color: #fff;
   box-shadow: 0 0.25rem 0.625rem rgba(20, 20, 20, 0.1019607843);
   border-radius: 5px;

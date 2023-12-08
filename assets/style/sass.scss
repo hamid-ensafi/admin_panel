@@ -266,6 +266,7 @@ main {
 
                                 >i {
                                     color: #8c9097;
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -330,7 +331,7 @@ main {
                             top: 100%;
                             left: 0;
                             width: 65%;
-
+                            z-index: 10;
                             background-color: #fff;
                             box-shadow: 0 0.25rem 0.625rem #1414141a;
                             border-radius: 5px;
