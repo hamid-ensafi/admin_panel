@@ -40,9 +40,9 @@ Dropdown_btn.forEach((value) => {
 })
 
 
-let Todo_value = document.querySelectorAll('.todo-content>li')
-let Todo_content = document.querySelectorAll('.counter-notif')
-let Todo_container = document.querySelectorAll('.sub-shoping-content')
+const Todo_value = document.querySelectorAll('.todo-content>li')
+const Todo_content = document.querySelectorAll('.counter-notif')
+const Todo_container = document.querySelectorAll('.sub-shoping-content')
 
 Todo_value.forEach((value) => {
     value.addEventListener('click', Remove_element)
@@ -69,7 +69,8 @@ function counter_number() {
         value.querySelector('.counter-items-num').innerHTML =counter 
         value.querySelector('.count').innerHTML = counter
         if(counter==0){
-            console.log('hamid')
+            value.querySelector('.todo-container').style.display='none'
+            value.querySelector('.empty-container').style.display='block'
         }
 
     })
