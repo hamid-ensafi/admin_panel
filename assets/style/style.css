@@ -31,20 +31,107 @@ main {
   position: relative;
 }
 
+.mouse-leave .menu-container {
+  width: 6% !important;
+}
+.mouse-leave .main-content-container {
+  width: 94% !important;
+}
+.mouse-leave .menu-content {
+  position: fixed !important;
+  width: 16% !important;
+}
+
+.mouse-enter .menu-container {
+  width: 16% !important;
+}
+.mouse-enter .main-content-container {
+  width: 84% !important;
+}
+.mouse-enter .menu-content {
+  position: sticky !important;
+  width: 100% !important;
+}
+
+.web-container-open .menu-container {
+  width: 16%;
+}
+.web-container-open .menu-container > .menu-content > .menu-image > figure:nth-of-type(1) {
+  display: flex;
+}
+.web-container-open .menu-container > .menu-content > .menu-image > figure:nth-of-type(2) {
+  display: none !important;
+}
+.web-container-open .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury > span:nth-of-type(1) {
+  display: block;
+  font-size: 10px;
+  color: rgba(152, 162, 196, 0.443);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.065rem;
+}
+.web-container-open .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury > span:nth-of-type(2) {
+  display: none;
+}
+.web-container-open > .main-content-container {
+  width: 84%;
+}
+
+.web-container-close .menu-container {
+  width: 6% !important;
+}
+.web-container-close .menu-container > .menu-content > .menu-image > figure:nth-of-type(1) {
+  display: none !important;
+}
+.web-container-close .menu-container > .menu-content > .menu-image > figure:nth-of-type(2) {
+  display: flex;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury {
+  display: flex;
+  justify-content: center;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury > span:nth-of-type(1) {
+  display: none;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury > span:nth-of-type(2) {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #919296;
+  border-radius: 50%;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content {
+  justify-content: center;
+  text-align: center;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content > span {
+  display: none;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content > i:nth-of-type(1) {
+  margin-right: 0 !important;
+}
+.web-container-close .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content > i:nth-of-type(2) {
+  display: none;
+}
+.web-container-close > .main-content-container {
+  width: 94% !important;
+}
+
 .web-container {
   display: flex;
 }
 .web-container > .menu-container {
-  width: 16%;
+  transition-duration: 0.2s;
+  z-index: 100;
   position: relative;
-  z-index: 5;
 }
 .web-container > .menu-container > .menu-content {
   background-color: #111c43;
   height: 100vh;
-  width: 16%;
+  width: 100%;
   overflow-y: scroll;
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 .web-container > .menu-container > .menu-content::-webkit-scrollbar {
   display: none;
@@ -63,16 +150,14 @@ main {
 .web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury {
   padding: 0.5rem 1.1rem;
 }
-.web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury > span {
-  font-size: 10px;
-  color: rgba(152, 162, 196, 0.443);
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.065rem;
-}
 .web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container {
   color: #Acaed1;
   padding: 0 0.75rem;
+}
+.web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .accr-menu-container {
+  height: 0;
+  overflow: hidden;
+  transition-duration: 0.3s;
 }
 .web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .accr-menu-container > .accr-menu-content > li {
   padding-left: 1.5rem;
@@ -84,6 +169,10 @@ main {
   font-size: 13px;
   text-transform: capitalize;
   color: #Acaed1;
+  border-radius: 5px;
+}
+.web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .accr-menu-container > .accr-menu-content > li > a:hover {
+  background-color: #1d284d;
 }
 .web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .accr-menu-container > .accr-menu-content > li > a::before {
   content: "";
@@ -103,6 +192,10 @@ main {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
+}
+.web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content:hover {
+  background-color: #1d284d;
 }
 .web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content > i:nth-of-type(1) {
   margin-right: 10px;
@@ -112,6 +205,7 @@ main {
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
+  transition-duration: 0.2s;
 }
 .web-container > .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-container > .slide-content > span {
   font-size: 13px;
@@ -128,21 +222,25 @@ main {
   color: #f5b949;
 }
 .web-container > .main-content-container {
-  width: 84%;
+  transition-duration: 0.2s;
 }
 .web-container > .main-content-container > .header-top {
+  position: sticky;
+  top: 0;
   background-color: #fff;
   border: 1px solid #f3f3f3;
+  z-index: 10;
 }
 .web-container > .main-content-container > .header-top > .header-content {
   display: flex;
   justify-content: space-between;
 }
-.web-container > .main-content-container > .header-top > .header-content > .menu-humbprg-icon {
+.web-container > .main-content-container > .header-top > .header-content > .menu-humborg-icon {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-.web-container > .main-content-container > .header-top > .header-content > .menu-humbprg-icon > i {
+.web-container > .main-content-container > .header-top > .header-content > .menu-humborg-icon > i {
   color: #536485;
 }
 .web-container > .main-content-container > .header-top > .header-content > .icon-header {
