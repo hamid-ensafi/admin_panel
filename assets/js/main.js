@@ -153,18 +153,20 @@ const Menu_content = document.querySelector('.menu-content')
 Menu_content.addEventListener('mouseenter', () => {
     if (counter) {
         close_window()
-        Menu_content.style.cssText = 'position:fixed;width:16%'
+        // Menu_content.style.cssText = 'position:fixed;width:16%'
         Menu_container.classList.add('mouse-leave')
         Menu_container.classList.remove('mouse-enter')
+        
     }
 
 })
 Menu_content.addEventListener('mouseleave', () => {
     if (counter) {
         open_window()
-        Menu_content.style.cssText = 'position:sticky;width:100%'
+        // Menu_content.style.cssText = 'position:sticky;width:100%'
         Menu_container.classList.add('mouse-enter')
         Menu_container.classList.remove('mouse-leave')
+        
     }
 })
 // .main-content-container change width then click not mouse enter 

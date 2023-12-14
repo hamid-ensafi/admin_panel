@@ -1,0 +1,138 @@
+/* xs */
+
+@media screen and (max-width:576px) {
+    .main-content-container{
+        width: 100% !important;
+    }
+    .header-content{
+        justify-content: center;
+    }
+    .mouse-leave{
+        .menu-container{
+            width: 0% !important;
+        }
+        .main-content-container {
+            width: 100% !important;
+        }
+        .menu-content{
+            position: fixed !important;
+            width: 0% !important;
+        }
+    }
+    .mouse-enter{
+        .menu-container{
+            width: 0% !important;
+        }
+        .main-content-container {
+            width: 100% !important;
+        }
+        .menu-content{
+            position: sticky !important;
+            width: 0% !important;
+        }
+    }
+  
+    
+    
+}
+
+
+
+
+
+/* sm*/
+
+@media screen and (min-width:577px){
+    .main-content-container{
+        width: 100%;
+    }
+    .header-content{
+        justify-content: center;
+    }
+    .mouse-leave{
+        .menu-container{
+            width: 0% !important;
+        }
+        .main-content-container {
+            width: 100% !important;
+        }
+        .menu-content{
+            position: fixed !important;
+            width: 0% !important;
+        }
+    }
+    .mouse-enter{
+        .menu-container{
+            width: 0% !important;
+        }
+        .main-content-container {
+            width: 100% !important;
+        }
+        .menu-content{
+            position: sticky !important;
+            width: 0% !important;
+        }
+    }
+    
+} 
+
+
+
+/* md */
+@media screen and (min-width:768px) {
+  
+
+}
+
+
+
+/* lg */
+
+@media screen and (min-width:992px) {
+    .mouse-leave{
+        .menu-container{
+            width: 6% !important;
+        }
+        .main-content-container {
+            width: 94% !important;
+        }
+        .menu-content{
+            position: fixed !important;
+            width: 16% !important;
+        }
+    }
+    .mouse-enter{
+        .menu-container{
+            width: 6% !important;
+        }
+        .main-content-container {
+            width: 94% !important;
+        }
+        .menu-content{
+            position: sticky !important;
+            width: 100% !important;
+        }
+    }
+    .main-content-container{
+        width: 84%;
+    }
+    .header-content{
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+/* xl */
+
+@media screen and (min-width:1200px) {
+ 
+
+}
+
+
+
+/* xxl */
+
+@media screen and (min-width:1400px) {}

@@ -69,7 +69,7 @@ let Column_option = {
     chart: {
         type: 'bar',
         height: 180,
-        width:276,
+        width:'100%',
         toolbar: {
             show: false,
         },
@@ -187,7 +187,7 @@ let Main_option = {
     ],
     chart: {
         height: 350,
-
+        width:'100%',
         toolbar: {
             show: true,
             offsetX: 0,
@@ -301,7 +301,7 @@ let line_option1 = {
         data: [10, 0, 15, 0, 40, 35, 40, 0, 15]
     }],
     chart: {
-        width: 90,
+        width: 100,
         height: 40,
         type: 'line',
         toolbar: {

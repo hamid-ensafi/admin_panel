@@ -31,28 +31,6 @@ main {
   position: relative;
 }
 
-.mouse-leave .menu-container {
-  width: 6% !important;
-}
-.mouse-leave .main-content-container {
-  width: 94% !important;
-}
-.mouse-leave .menu-content {
-  position: fixed !important;
-  width: 16% !important;
-}
-
-.mouse-enter .menu-container {
-  width: 16% !important;
-}
-.mouse-enter .main-content-container {
-  width: 84% !important;
-}
-.mouse-enter .menu-content {
-  position: sticky !important;
-  width: 100% !important;
-}
-
 .web-container-open .menu-container {
   width: 16%;
 }
@@ -73,8 +51,8 @@ main {
 .web-container-open .menu-container > .menu-content > .menu-left-container > nav > ul > .slide-categury > span:nth-of-type(2) {
   display: none;
 }
-.web-container-open > .main-content-container {
-  width: 84%;
+.web-container-open > .web-container {
+  width: 100% !important;
 }
 
 .web-container-close .menu-container {
@@ -114,7 +92,7 @@ main {
   display: none;
 }
 .web-container-close > .main-content-container {
-  width: 94% !important;
+  width: 94%;
 }
 
 .web-container {
@@ -233,7 +211,7 @@ main {
 }
 .web-container > .main-content-container > .header-top > .header-content {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 .web-container > .main-content-container > .header-top > .header-content > .menu-humborg-icon {
   display: flex;

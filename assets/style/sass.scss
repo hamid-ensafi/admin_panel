@@ -37,30 +37,7 @@ a {
 main {
     position: relative;
 }
-.mouse-leave{
-    .menu-container{
-        width: 6% !important;
-    }
-    .main-content-container {
-        width: 94% !important;
-    }
-    .menu-content{
-        position: fixed !important;
-        width: 16% !important;
-    }
-}
-.mouse-enter{
-    .menu-container{
-        width: 16% !important;
-    }
-    .main-content-container {
-        width: 84% !important;
-    }
-    .menu-content{
-        position: sticky !important;
-        width: 100% !important;
-    }
-}
+
 .web-container-open {
     .menu-container {
         width: 16%;
@@ -106,8 +83,8 @@ main {
         }
 
     }
-    >.main-content-container {
-        width: 84%;
+    > .web-container{
+        width: 100% !important;
     }
 }
 
@@ -176,7 +153,7 @@ main {
     }
 
     >.main-content-container {
-        width: 94% !important;
+        width: 94% ;
     }
 }
 
@@ -327,7 +304,7 @@ main {
 
             >.header-content {
                 display: flex;
-                justify-content: space-between;
+              align-items: center;
 
                 >.menu-humborg-icon {
                     display: flex;
