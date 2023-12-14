@@ -10,7 +10,8 @@
 
 
 
-- 🔗 [Demo Project]([https://hamid-ensafi.github.io/game-strom/](https://hamid-ensafi.github.io/admin_panel/))
+- 🔗 [Demo Project](https://hamid-ensafi.github.io/admin_panel/)
+
 
 - 👨‍💻 Developed by hamid ensafi
 
