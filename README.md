@@ -1,7 +1,7 @@
 🏃‍♂️**this is admin panel template **
 <h3 align="center"> 📸 Gallery </h3>
 
-![Untitled-1](https://github.com/hamid-ensafi/admin_panel/assets/129867758/96d23aa4-686b-4058-9658-e4af197f861d)
+![Untitled-1](https://github.com/hamid-ensafi/admin_panel/)
 
 
 
