@@ -22,4 +22,4 @@
 - 🕵🏻‍♀️ Role - Frontend
 
 - 📫 How to reach me : with my [instagram](https://www.instagram.com/hamid.ensafi_web) and [linkedin](https://www.linkedin.com/in/hamid-ensafi-20a45721a/)
-# game-strom
+# admin-panel
