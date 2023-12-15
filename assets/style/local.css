@@ -26,6 +26,12 @@
     position: sticky !important;
     width: 0% !important;
   }
+  #main-chart{
+    margin-bottom: 1rem !important;
+  }
+  .footer-bottom{
+    bottom: -100px;
+  }
 }
 /* sm*/
 @media screen and (min-width: 577px) {
@@ -54,6 +60,12 @@
   .mouse-enter .menu-content {
     position: sticky !important;
     width: 0% !important;
+  }
+  #main-chart{
+    margin-bottom: 1rem !important;
+  }
+  .footer-bottom{
+    bottom: -100px;
   }
 }
 /* md */
@@ -84,6 +96,12 @@
   }
   .header-content {
     justify-content: space-between;
+  }
+  #main-chart{
+    margin-bottom: 0 !important;
+  }
+  .footer-bottom{
+    bottom: 0;
   }
 }
 /* xl */

@@ -32,7 +32,9 @@
         }
     }
   
-    
+    #main-chart{
+        margin-bottom: 1rem !important;
+      }
     
 }
 
@@ -73,6 +75,9 @@
             width: 0% !important;
         }
     }
+    #main-chart{
+        margin-bottom: 1rem !important;
+      }
     
 } 
 
@@ -119,7 +124,9 @@
     .header-content{
         justify-content: space-between;
     }
-    
+    #main-chart{
+        margin-bottom: 0 !important;
+      }
 }
 
 

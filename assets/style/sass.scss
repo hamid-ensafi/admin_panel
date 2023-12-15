@@ -36,6 +36,7 @@ a {
 // normalize 
 main {
     position: relative;
+    overflow: hidden;
 }
 
 .web-container-open {
@@ -1086,6 +1087,7 @@ main {
         >.title-main-content {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
             margin: 1.5rem 0;
 
@@ -1930,7 +1932,7 @@ main {
     padding: 1rem 0;
     border-top: 1px solid #eee;
     position: absolute;
-    bottom: 0;
+    
     right: 0;
     width: 100%;
     // transform: translateY(20%);
